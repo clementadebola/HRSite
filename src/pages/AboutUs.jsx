@@ -53,6 +53,7 @@ const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   // gap: 1rem;
+  // display: flex;
   align-items: center;
 
   @media (max-width: 1024px) {
