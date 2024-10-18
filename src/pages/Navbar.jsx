@@ -22,7 +22,7 @@ const Navbar = () => {
           <StyledLink to="/" onClick={() => setIsOpen(false)}>Home</StyledLink>
         </MenuItem>
         <MenuItem>
-          <StyledLink to="/about" onClick={() => setIsOpen(false)}>About Us</StyledLink>
+          <StyledLink to="/aboutus" onClick={() => setIsOpen(false)}>About Us</StyledLink>
         </MenuItem>
         <MenuItem>
           <StyledLink to="/services" onClick={() => setIsOpen(false)}>Services</StyledLink>

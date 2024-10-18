@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import recuitmentImg from '../assets/recuitment.png'
+import trainingImg from '../assets/training.png'
+import employeeImg from "../assets/employee.png"
 
 const Services = () => {
   return (
@@ -7,16 +10,27 @@ const Services = () => {
       <h2>Our Services</h2>
       <ServiceGrid>
         <ServiceCard>
-          <h3>Recruitment</h3>
-          <p>Providing top-notch recruitment services to help you find the best talent.</p>
+            <div>
+            <h3>Recruitment</h3>
+            <p>Providing top-notch recruitment services to help you find the best talent.</p>
+            </div>
+            <div>
+                <img src={recuitmentImg} alt="" />
+            </div>
         </ServiceCard>
         <ServiceCard>
           <h3>Training & Development</h3>
           <p>Enhancing employee skills through tailored training programs.</p>
+          <div>
+                <img src={trainingImg} alt="" />
+            </div>
         </ServiceCard>
         <ServiceCard>
           <h3>Employee Management</h3>
           <p>Streamlining HR processes for better employee engagement and productivity.</p>
+          <div>
+                <img src={employeeImg} alt="" />
+            </div>
         </ServiceCard>
       </ServiceGrid>
     </ServicesSection>

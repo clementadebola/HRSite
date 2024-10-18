@@ -12,7 +12,7 @@ const HomePage = () => {
     <div>
       <Navbar />
       <HeroSection />
-      <Section id="about">
+      <Section id="aboutus">
         <AboutUs />
       </Section>
       <Section id="missionVisionPage">
