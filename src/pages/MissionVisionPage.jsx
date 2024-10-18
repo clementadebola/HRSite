@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import img from "../assets/mission.jpg"
 
-
 const MissionVisionPage = () => {
   return (
     <Container>
@@ -67,10 +66,10 @@ const MissionVisionPage = () => {
   );
 };
 
-
 const Container = styled.div`
   min-height: 100vh;
   background: linear-gradient(to bottom, #165999FF, white);
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 `;
 
 const Header = styled.div`
@@ -112,6 +111,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 32px;
+
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
@@ -129,7 +129,6 @@ const ContentCard = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
-
 
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -193,7 +192,7 @@ const Overlay = styled.div`
 
 const ValuesSection = styled.div`
   margin-top: 64px;
-  
+
   h2 {
     font-size: 1.75rem;
     font-weight: 600;
@@ -206,8 +205,9 @@ const ValuesGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
+
   @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 `;
 
