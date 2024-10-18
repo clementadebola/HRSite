@@ -6,7 +6,6 @@ import img from "../assets/mission.jpg"
 const MissionVisionPage = () => {
   return (
     <Container>
-      {/* Header Section */}
       <Header>
         <HeaderContent>
           <Title>Our Vision & Mission</Title>
@@ -14,10 +13,8 @@ const MissionVisionPage = () => {
         </HeaderContent>
       </Header>
 
-      {/* Main Content */}
       <MainContent>
         <Grid>
-          {/* Left Column - Text Content */}
           <TextContent>
             <ContentCard>
               <h2>Vision</h2>
@@ -43,7 +40,6 @@ const MissionVisionPage = () => {
             </ContentCard>
           </TextContent>
 
-          {/* Right Column - Image */}
           <ImageContainer>
             <Overlay className="top-right" />
             <StyledImage src={img} alt="Team collaboration" />
@@ -51,7 +47,6 @@ const MissionVisionPage = () => {
           </ImageContainer>
         </Grid>
 
-        {/* Values Section */}
         <ValuesSection>
           <h2>Our Core Values</h2>
           <ValuesGrid>
@@ -72,7 +67,7 @@ const MissionVisionPage = () => {
   );
 };
 
-// Styled-components
+
 const Container = styled.div`
   min-height: 100vh;
   background: linear-gradient(to bottom, #165999FF, white);
@@ -94,6 +89,10 @@ const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: bold;
   color: #1a202c;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Underline = styled.div`
@@ -130,6 +129,7 @@ const ContentCard = styled.div`
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+
 
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);

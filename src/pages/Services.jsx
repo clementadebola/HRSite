@@ -106,6 +106,10 @@ const CardContent = styled.div`
   width: 300px;
   border-radius: 25px;
 
+    @media (max-width: 768px) {
+    width: 250px;
+    }
+
   img {
     max-width: 150px;
     margin-top: 1.5rem;
