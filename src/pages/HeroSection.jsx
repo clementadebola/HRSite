@@ -62,7 +62,7 @@ const HeroContainer = styled.section`
   min-height: 100vh;
   background: linear-gradient(135deg, #0A2540 0%, #1E4D7B 100%);
   overflow: hidden;
-  padding: 2rem;
+  padding: 2rem ;
 
   @media (max-width: 768px) {
     padding: 1rem;
