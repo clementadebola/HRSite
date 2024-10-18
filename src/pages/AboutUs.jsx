@@ -52,7 +52,7 @@ const Container = styled.div`
 const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  // gap: 1rem;
   align-items: center;
 
   @media (max-width: 1024px) {

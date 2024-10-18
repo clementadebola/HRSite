@@ -46,7 +46,7 @@ export default Services;
 // Styled Components
 const ServicesSection = styled.section`
   padding: 4rem 1rem;
-  background-color: #F5F5F5;
+  background-color: #F2F3F7FF;
   text-align: center;
 
   h2 {
